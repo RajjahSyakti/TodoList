@@ -1,6 +1,4 @@
-# README.md
-
-# Judul Proyek
+# To Do List
 
 aplikasi ini adalah aplikasi untuk mengingatkan kita agar tidak ada hal yang dilupakan
 
