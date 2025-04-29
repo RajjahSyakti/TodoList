@@ -6,8 +6,7 @@ aplikasi ini adalah aplikasi untuk mengingatkan kita agar tidak ada hal yang dil
 
 ## Petunjuk Instalasi
 
-1.  Klon repositori: `https://github.com/RajjahSyakti/TodoList`
-2.  ... (Langkah-langkah instalasi lainnya)
+Klon repositori: `https://github.com/RajjahSyakti/TodoList`
 
 ## Cara Menggunakan
 
