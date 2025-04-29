@@ -1,4 +1,9 @@
 var ambilData = document.getElementById("ambilData");
+var deleteAllButton = document.getElementById("deleteAllButton");
+var isiData = document.getElementById("isiData");
+
+deleteAllButton.style.display = "none";
+isiData.style.display = "none";
 
 // fungsi untuk merender data ke table
 function tampilkanData() {
@@ -11,12 +16,20 @@ function tampilkanData() {
     const tanggalDibuat = row.insertCell();
     const aksi = row.insertCell();
 
+    namaTugas.classList = "nama-tugas";
+    tanggalDibuat.classList = "tanggal-dibuat";
+
     namaTugas.textContent = item.namatugas;
     tanggalDibuat.textContent = item.tanggaldibuat;
 
+    if (data.length > 0) {
+      deleteAllButton.style.display = "block";
+      isiData.style.display = "block";
+    }
+
     const tombolHapus = document.createElement("button");
     tombolHapus.textContent = "hapus";
-    tombolHapus.classList.add("tombol-hapus");
+    tombolHapus.classList = "tombol-hapus";
     tombolHapus.addEventListener("click", function () {
       hapusTugas(index);
     });
@@ -62,5 +75,11 @@ var tombolKirim = document
     tampilkanData();
     inputTugas.value = "";
   });
+
+deleteAllButton.addEventListener("click", function () {
+  localStorage.clear();
+  location.reload();
+  alert("berhasil menghapus semua data!");
+});
 
 tampilkanData();

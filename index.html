@@ -7,17 +7,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="">
-    <h1 class="bold text-3xl text-center p-4">To-Do List</h1>
+    <h1 class="judul">To-Do List</h1>
 
-    <div class="form-pengisian">
-      <label for="namaTugas" class="label-tugas">Masukan Nama Tugas Yang Mau Kamu Catat</label>
-      <br>
-      <input type="text" id="namaTugas" class="field-tugas" />
-      <button id="tombolKirim">Submit</button>
+    <div class="form">
+      <div class="form-pengisian">
+        <label for="namaTugas" class="label-tugas"
+          >Masukan Nama Tugas Yang Mau Kamu Catat</label
+        >
+        <br />
+        <input type="text" autocomplete="off" id="namaTugas" class="field-tugas" />
+
+        <div class="container-tombol">
+          <button id="tombolKirim">Submit</button>
+        </div>
+      </div>
     </div>
 
-    <table class="table-data" id="ambilData">
-    </table>
+    <div class="isi-data" id="isiData">
+      <table class="table-data" id="ambilData"></table>
+      <div class="delete-all-button">
+        <button type="submit" id="deleteAllButton">Hapus Semua Schedule</button>
+      </div>
+    </div>
 
     <script src="index.js"></script>
   </body>
