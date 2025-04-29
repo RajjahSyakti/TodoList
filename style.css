@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.tombol-hapus {
+    color: red;
+}
+.table-data{
+    margin-top: 50px;
+}
